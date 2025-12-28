@@ -1,6 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import "../index.css";
-import { Button } from "react-bootstrap";
+import { Button } from "@/components/ui/button";
+
 const MainLayout = () => {
   return (
     <>
