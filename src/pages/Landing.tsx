@@ -102,10 +102,10 @@ export default function Landing() {
             Gallery
           </h1>
           <div className="flex w-full flex-wrap justify-center gap-2 mt-4">
-            {gallary.map((card, _) => (
+            {gallary.map((card, index) => (
               <MenuCard
                 imageURL={card.Image}
-                title={card.Title}
+                title={`${card.Title}${index + 1}`}
                 className={"rounded-lg max-w-65 max-h-40"}
               />
             ))}
