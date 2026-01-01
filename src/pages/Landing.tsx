@@ -9,7 +9,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import MenuCard from "@/components/MenuCard";
-import { gallary } from "../assets/staticData";
+import { gallary, MostPickMenu } from "../assets/staticData";
+import MostPick from "@/components/MostPick";
 export default function Landing() {
   return (
     <div className="m-4 w-full container">
@@ -82,20 +83,25 @@ export default function Landing() {
           </div>
         </div>
         <div className="lg:col-span-3">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
-            {gallary.map((card, index) => (
-              <MenuCard
+          <h1 className="text-3xl font-semibold border-b-2 text-center border-slate-500">
+            Most Picked
+          </h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 ">
+            {MostPickMenu.map((card, index) => (
+              <MostPick
                 key={index}
                 imageURL={card.Image}
-                title={card.Title}
-                className={"rounded-lg max-w-65 max-h-40"}
+                className={"rounded-lg max-w-75 max-h-55"}
               />
             ))}
           </div>
         </div>
 
         <div className="lg:col-span-3">
-          <div className="flex w-full flex-wrap justify-center gap-2">
+          <h1 className="text-3xl font-semibold border-b-2 text-center border-slate-500 ">
+            Gallery
+          </h1>
+          <div className="flex w-full flex-wrap justify-center gap-2 mt-4">
             {gallary.map((card, _) => (
               <MenuCard
                 imageURL={card.Image}
@@ -105,8 +111,10 @@ export default function Landing() {
             ))}
           </div>
         </div>
-        <div className="lg:col-span-3 border-y-2 h-[10rem]">
-          <h1>Contact Us</h1>
+        <div className="lg:col-span-3 h-[10rem] border-b-2 border-slate-500">
+          <h1 className="text-3xl font-semibold border-b-2 text-center border-slate-500">
+            Footer
+          </h1>
           <div className="flex justify-center items-center h-full">
             <h1 className="text-3xl font-semibold">
               Subscribe To Our Travel Planner

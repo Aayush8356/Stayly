@@ -48,3 +48,51 @@ export const gallary = [
     className: "",
   },
 ];
+
+export const MostPickMenu = [
+  {
+    Image:
+      "https://digital.ihg.com/is/image/ihg/intercontinental-tegucigalpa-6071105521-2x1",
+    className: "",
+  },
+  {
+    Image:
+      "https://digital.ihg.com/is/image/ihg/intercontinental-tegucigalpa-6071105521-2x1",
+    className: "",
+  },
+  {
+    Image:
+      "https://digital.ihg.com/is/image/ihg/intercontinental-tegucigalpa-6071105521-2x1",
+    className: "",
+  },
+  {
+    Image:
+      "https://digital.ihg.com/is/image/ihg/intercontinental-tegucigalpa-6071105521-2x1",
+    className: "",
+  },
+  {
+    Image:
+      "https://digital.ihg.com/is/image/ihg/intercontinental-tegucigalpa-6071105521-2x1",
+    className: "",
+  },
+  {
+    Image:
+      "https://digital.ihg.com/is/image/ihg/intercontinental-tegucigalpa-6071105521-2x1",
+    className: "",
+  },
+  {
+    Image:
+      "https://digital.ihg.com/is/image/ihg/intercontinental-tegucigalpa-6071105521-2x1",
+    className: "",
+  },
+  {
+    Image:
+      "https://digital.ihg.com/is/image/ihg/intercontinental-tegucigalpa-6071105521-2x1",
+    className: "",
+  },
+  {
+    Image:
+      "https://digital.ihg.com/is/image/ihg/intercontinental-tegucigalpa-6071105521-2x1",
+    className: "",
+  },
+];
