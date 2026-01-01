@@ -10,8 +10,7 @@ const MainLayout = () => {
           className="mx-4 text-3xl font-mono font-semibold"
           style={{ color: "indigo" }}
         >
-          {" "}
-          Stay.ly
+          <Link to="/">Stay.ly</Link>
         </div>
         <nav className="flex justify-end text-xl gap-4">
           <Link to="/hotels">Hotels</Link>
