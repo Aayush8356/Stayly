@@ -96,7 +96,7 @@ export default function Landing() {
 
         <div className="lg:col-span-3">
           <div className="flex w-full flex-wrap justify-center gap-2">
-            {gallary.map((card, index) => (
+            {gallary.map((card, _) => (
               <MenuCard
                 imageURL={card.Image}
                 title={card.Title}
