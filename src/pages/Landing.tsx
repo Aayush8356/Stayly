@@ -8,13 +8,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import MenuCard from "@/components/MenuCard";
+import { gallary } from "../assets/staticData";
 export default function Landing() {
-  const gallary = [
-    {
-      Image: "",
-      Title: "hotel-1",
-    },
-  ];
   return (
     <div className="m-4 w-full container">
       <div className="grid  grid-cols-1 lg:grid-cols-3 gap-4 p-4 ">
@@ -23,7 +19,7 @@ export default function Landing() {
             Forget Busy Work, Start Next Vacation
           </div>
           <div>
-            <p className="w-[80%]">
+            <p className="w-[80%] mb-4">
               We provide what you need to enjoy your holiday with family. Time
               to make another memorable moments.
             </p>
@@ -86,18 +82,37 @@ export default function Landing() {
           </div>
         </div>
         <div className="lg:col-span-3">
-          <div className="flex w-full flex-wrap justify-center gap-2">
-            {Array.from({ length: 10 }).map((_) => (
-              <img
-                className="rounded-lg max-w-60 max-h-40"
-                alt="hotel"
-                src="https://assets.architecturaldigest.in/photos/60083e1151daf9662c1492c6/16:9/w_2560%2Cc_limit/The-Oberoi-Mumbai-feature-image-1366x768.jpg"
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
+            {gallary.map((card, index) => (
+              <MenuCard
+                key={index}
+                imageURL={card.Image}
+                title={card.Title}
+                className={"rounded-lg max-w-65 max-h-40"}
               />
             ))}
           </div>
         </div>
-        <div className="lg:col-span-3">Gallary</div>
-        <div className="lg:col-span-3">Footer</div>
+
+        <div className="lg:col-span-3">
+          <div className="flex w-full flex-wrap justify-center gap-2">
+            {gallary.map((card, index) => (
+              <MenuCard
+                imageURL={card.Image}
+                title={card.Title}
+                className={"rounded-lg max-w-65 max-h-40"}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="lg:col-span-3 border-y-2 h-[10rem]">
+          <h1>Contact Us</h1>
+          <div className="flex justify-center items-center h-full">
+            <h1 className="text-3xl font-semibold">
+              Subscribe To Our Travel Planner
+            </h1>
+          </div>
+        </div>
       </div>
     </div>
   );
