@@ -111,15 +111,17 @@ export default function Landing() {
             ))}
           </div>
         </div>
-        <div className="lg:col-span-3 h-[10rem] m-4 p-2 border-t border-slate-200">
-          <div className="flex lg:flex-row flex-col justify-between">
-            <div className="flex flex-col h-full">
-              <h1 className="text-3xl font-semibold ">STAY.LY</h1>
-              <p>We kaboom your beauty holiday instantly and memorable.</p>
+        <div className="lg:col-span-3 m-4 p-2 border-t border-slate-200">
+          <div className="flex lg:flex-row flex-col items-center justify-between">
+            <div className="flex flex-col  h-full">
+              <h1 className="text-3xl font-semibold mb-4">STAY.LY</h1>
+              <p className="w-[70%]">
+                We kaboom your beauty holiday instantly and memorable.
+              </p>
             </div>
-            <div className="h-full">
-              <p>Become hotel Owner</p>
-              <Button size={"sm"} className="btn btn-primary">
+            <div className="flex flex-col h-full gap-4">
+              <h4>Become hotel Owner</h4>
+              <Button size={"sm"} className="self-start text-secondary">
                 Register Now
               </Button>
             </div>
