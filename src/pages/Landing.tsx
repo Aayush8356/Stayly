@@ -83,7 +83,7 @@ export default function Landing() {
           </div>
         </div>
         <div className="lg:col-span-3">
-          <h1 className="text-3xl font-semibold border-b-2 text-center border-slate-500">
+          <h1 className="text-3xl font-semibold border-b-2 text-center border-slate-200">
             Most Picked
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 ">
@@ -98,7 +98,7 @@ export default function Landing() {
         </div>
 
         <div className="lg:col-span-3">
-          <h1 className="text-3xl font-semibold border-b-2 text-center border-slate-500 ">
+          <h1 className="text-3xl font-semibold border-b-2 text-center border-slate-200 ">
             Gallery
           </h1>
           <div className="flex w-full flex-wrap justify-center gap-2 mt-4">
@@ -111,14 +111,18 @@ export default function Landing() {
             ))}
           </div>
         </div>
-        <div className="lg:col-span-3 h-[10rem] border-b-2 border-slate-500">
-          <h1 className="text-3xl font-semibold border-b-2 text-center border-slate-500">
-            Footer
-          </h1>
-          <div className="flex justify-center items-center h-full">
-            <h1 className="text-3xl font-semibold">
-              Subscribe To Our Travel Planner
-            </h1>
+        <div className="lg:col-span-3 h-[10rem] m-4 p-2 border-t border-slate-200">
+          <div className="flex lg:flex-row flex-col justify-between">
+            <div className="flex flex-col h-full">
+              <h1 className="text-3xl font-semibold ">STAY.LY</h1>
+              <p>We kaboom your beauty holiday instantly and memorable.</p>
+            </div>
+            <div className="h-full">
+              <p>Become hotel Owner</p>
+              <Button size={"sm"} className="btn btn-primary">
+                Register Now
+              </Button>
+            </div>
           </div>
         </div>
       </div>
