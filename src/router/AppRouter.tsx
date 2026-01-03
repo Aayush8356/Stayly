@@ -7,6 +7,7 @@ import PageNotFound from "../pages/PageNotFound";
 import { Contacts } from "../pages/Contacts";
 import About from "../pages/About";
 import Hotels from "../pages/Hotels";
+import Register from "@/pages/Register";
 
 const AppRouter = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const AppRouter = createBrowserRouter([
       { path: "about", element: <About /> },
       { path: "contacts", element: <Contacts /> },
       { path: "login", element: <Login /> },
+      { path: "register", element: <Register /> },
     ],
   },
 ]);

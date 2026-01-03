@@ -14,7 +14,7 @@ import MostPick from "@/components/MostPick";
 export default function Landing() {
   return (
     <div className="m-4 w-full container">
-      <div className="grid  grid-cols-1 lg:grid-cols-3 gap-4 p-4 ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 ">
         <div className="col-span-1 lg:col-span-1 p-4 g-4 flex flex-col justify-between h-full">
           <div className="lg:text-3xl text-xl font-semibold">
             Forget Busy Work, Start Next Vacation
@@ -97,7 +97,7 @@ export default function Landing() {
           </div>
         </div>
 
-        <div className="lg:col-span-3">
+        <div className="lg:col-span-3 ">
           <h1 className="text-3xl font-semibold border-b-2 text-center border-slate-200 ">
             Gallery
           </h1>
