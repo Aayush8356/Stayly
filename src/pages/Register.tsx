@@ -28,7 +28,7 @@ const Register = () => {
           alt=""
         />
       </div>
-      <div className=" h-full p-2">
+      <div className=" h-full w-full  p-2">
         <h1 className="text-3xl font-semibold text-center">
           Create Your Account
         </h1>
