@@ -10,6 +10,7 @@ const Register = () => {
     last: "",
     email: "",
     password: "",
+    confirmPassword: "",
   };
   const [showPassword, setShowPassword] = useState(false);
   const [payload, setPayload] = useState({
