@@ -50,7 +50,7 @@ export default function Landing() {
             src="https://assets.architecturaldigest.in/photos/60083e1151daf9662c1492c6/16:9/w_2560%2Cc_limit/The-Oberoi-Mumbai-feature-image-1366x768.jpg"
           />
         </div>
-        <div className="lg:col-span-3 border bg-[#EAF1FF] p-3 rounded-full">
+        <div className="lg:col-span-3 border bg-[#EAF1FF] p-3 lg:rounded-full">
           <div className="flex justify-center">
             <form
               className="flex flex-wrap items-center gap-4"
