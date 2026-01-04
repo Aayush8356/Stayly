@@ -1,6 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import "../index.css";
 import { Button } from "@/components/ui/button";
+import Footer from "@/components/Footer";
 
 const MainLayout = () => {
   return (
@@ -22,6 +23,7 @@ const MainLayout = () => {
         </nav>
       </div>
       <Outlet />
+      <Footer />
     </>
   );
 };

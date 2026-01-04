@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Button } from "./ui/button";
 
 interface MenuType {
   title?: string;
@@ -14,10 +15,11 @@ const MenuCard = ({
   link = "hotels/:id",
 }: MenuType) => {
   return (
-    <div className="flex flex-col text-centers">
+    <div className="flex flex-col gap-2 items-center">
       <img className={className} alt="hotel" src={imageURL} />
+      <h4>{title}</h4>
       <Link to={link}>
-        <h4>{title}</h4>
+        <Button className="self-center">Book Now</Button>
       </Link>
     </div>
   );
