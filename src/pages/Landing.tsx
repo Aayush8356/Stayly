@@ -101,12 +101,13 @@ export default function Landing() {
           <h1 className="text-3xl font-semibold border-b-2 text-center border-slate-200 ">
             Gallery
           </h1>
-          <div className="flex w-full flex-wrap justify-center gap-2 mt-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4 auto-rows-[240px]">
             {gallary.map((card, index) => (
               <MenuCard
                 imageURL={card.Image}
                 title={`${card.Title}${index + 1}`}
-                className={"rounded-lg max-w-65 max-h-40"}
+                link={`hotels/${card.id}`}
+                className={"rounded-lg w-full h-full object-cover"}
               />
             ))}
           </div>

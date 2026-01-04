@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const MainLayout = () => {
   return (
     <>
-      <div className="header sticky top-0 flex justify-between m-2 bg-white  p-4">
+      <div className="header sticky top-0  flex justify-between m-2 bg-white  p-4">
         <div
           className="mx-4 text-3xl font-mono font-semibold"
           style={{ color: "indigo" }}
