@@ -8,6 +8,7 @@ import { Contacts } from "../pages/Contacts";
 import About from "../pages/About";
 import Hotels from "../pages/Hotels";
 import Register from "@/pages/Register";
+import { Dashboard } from "@/components/authenticated/Dashboard";
 
 const AppRouter = createBrowserRouter([
   {
@@ -22,6 +23,7 @@ const AppRouter = createBrowserRouter([
       { path: "contacts", element: <Contacts /> },
       { path: "login", element: <Login /> },
       { path: "register", element: <Register /> },
+      { path: "dashboard", element: <Dashboard /> },
     ],
   },
 ]);
